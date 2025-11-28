@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=960, initial-scale=1.0">
+  <title>Reality Lost in Reels: Uncovering the Truth Behind Social Media Perfection</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Lato:wght@400;700&display=swap');
+
+    :root {
+      --font-family-display: 'Poppins', sans-serif;
+      --font-weight-display: 900;
+      --font-family-content: 'Lato', sans-serif;
+      --font-weight-content: 400;
+      --font-size-content: 16px;
+      --line-height-content: 1.5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-family-content);
+      font-weight: var(--font-weight-content);
+      font-size: var(--font-size-content);
+      line-height: var(--line-height-content);
+      overflow-x: hidden;
+      background-color: #ffffff;
+    }
+
+    .slide {
+      width: 960px;
+      height: 540px;
+      margin: 0 auto 20px;
+      display: flex;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+      animation: slideInSwipe 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes slideInSwipe {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .split-screen {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .split-left {
+      flex: 1;
+      background: linear-gradient(135deg, #FF007F 0%, #FF69B4 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .split-left::before {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      top: -80px;
+      right: -80px;
+    }
+
+    .split-left::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+      bottom: -60px;
+      left: -60px;
+    }
+
+    .split-right {
+      flex: 1;
+      background-color: #D7D7D7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2.5rem;
+      position: relative;
+    }
+
+    .content-left {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .content-right {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #333333;
+    }
+
+    h1, h2 {
+      font-family: var(--font-family-display);
+      font-weight: var(--font-weight-display);
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+
+    h1 { 
+      font-size: 2.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      opacity: 0.95;
+    }
+
+    .intro-text {
+      font-size: 0.95rem;
+      max-width: 350px;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .emoji-section {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+      display: inline-block;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      margin-bottom: 0.7rem;
+      line-height: 1.5;
+    }
+
+    ul li::before {
+      content: '• ';
+      margin-right: 0.5rem;
+    }
+
+    .callout {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .split-right .callout {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .visual-message {
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1: Title / Introduction -->
+  <section class="slide">
+    <div class="split-screen">
+      <div class="split-left">
+        <div class="content-left">
+          <div class="emoji-section">📸✨</div>
+          <h1>REALITY LOST IN REELS</h1>
+          <p class="subtitle">Uncovering the Truth Behind Social Media Perfection</p>
+          <p class="intro-text">
+            Instagram Reels often showcase only perfect, edited, and highly curated moments. Many young people begin comparing their real lives, appearance, and achievements to these highlights, creating unrealistic expectations and emotional pressure. This comparison cycle leads to low self-esteem, dissatisfaction, jealousy, and anxiety.
+          </p>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="content-right">
+          <div class="emoji-section">🧸📚</div>
+          <h1>THE REAL TRUTH</h1>
+          <p class="subtitle">What Actually Matters</p>
+          <p class="visual-message">Not everything posted is real</p>
+        </div>
+        <div style="position: absolute; bottom: 30px; right: 30px; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 14px; color: #000000; text-align: right; line-height: 1.1;">
+          <div style="margin: 2px 0; font-size: 12px; font-weight: 600;">Team Members:</div>
+          <div style="margin: 3px 0;">Sumaiya Shafeen</div>
+          <div style="margin: 3px 0;">Zaib Fatima</div>
+          <div style="margin: 3px 0;">Kaehkashan Tabassum</div>
+          <div style="margin: 3px 0;">Rakshan Ahmer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 2: The Problem -->
+  <section class="slide">
+    <div class="split-screen">
+      <div class="split-left">
+        <div class="content-left">
+          <div class="emoji-section">✨💄👑</div>
+          <h2 style="color: #ffffff;">WHY COMPARISON HAPPENS</h2>
+          <ul style="color: #ffffff;">
+            <li>Reels present filtered, staged, and exaggerated versions of life.</li>
+            <li>Influencer culture promotes unrealistic beauty and lifestyle standards.</li>
+            <li>Editing tools, trends, and likes create pressure to look "perfect."</li>
+            <li>Continuous exposure leads to insecurity, emotional stress, and reduced confidence.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="content-right">
+          <div class="emoji-section">😰💔😞</div>
+          <h2 style="color: #333333;">THE IMPACT</h2>
+          <ul style="color: #333333;">
+            <li>Unrealistic expectations set</li>
+            <li>Emotional pressure builds</li>
+            <li>Low self-esteem cycles</li>
+            <li>Dissatisfaction & anxiety</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 3: The Solution -->
+  <section class="slide">
+    <div class="split-screen">
+      <div class="split-left">
+        <div class="content-left">
+          <div class="emoji-section">❌📵</div>
+          <h2 style="color: #ffffff;">PROBLEM</h2>
+          <p style="color: #ffffff; font-size: 0.9rem; margin-bottom: 1rem;">Harmful Cycle</p>
+          <ul style="color: #ffffff;">
+            <li>Comparison triggers</li>
+            <li>Low self-esteem</li>
+            <li>Anxiety & pressure</li>
+            <li>Jealousy & dissatisfaction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="content-right">
+          <div class="emoji-section">✓💪😊🌱</div>
+          <h2 style="color: #333333;">REDUCING COMPARISON TRIGGERS</h2>
+          <ul style="color: #333333;">
+            <li><strong>1. Reduce Trigger Content:</strong> Unfollow accounts that cause insecurity or unrealistic expectations.</li>
+            <li><strong>2. Follow Positive Creators:</strong> Choose content that promotes authenticity, confidence, and mental well-being.</li>
+            <li><strong>3. Limit Reels Consumption:</strong> Reduce daily screen time to minimize comparison triggers.</li>
+            <li><strong>4. Reconnect with Reality:</strong> Engage in offline hobbies, meaningful activities, and mindfulness to shift focus back to real life.</li>
+          </ul>
+          <div class="callout" style="color: #333333;">
+            ✓ This approach helps break the comparison cycle and supports healthier self-esteem.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 4: Conclusion / Takeaways -->
+  <section class="slide">
+    <div class="split-screen">
+      <div class="split-left">
+        <div class="content-left">
+          <div class="emoji-section">✨🎬</div>
+          <h2 style="color: #ffffff;">CURATED</h2>
+          <p style="color: #ffffff; font-size: 1rem; margin: 1.5rem 0;">What You See</p>
+          <p style="color: #ffffff; font-size: 0.9rem; opacity: 0.85;">Filtered & edited highlight reels</p>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="content-right">
+          <div class="emoji-section">📖🌍</div>
+          <h2 style="color: #333333;">KEY TAKEAWAYS</h2>
+          <ul style="color: #333333; text-align: left; display: inline-block;">
+            <li>Social media perfection is crafted, filtered, and not a true reflection of life.</li>
+            <li style="margin-top: 0.8rem;">Reducing harmful content is the most effective step to protect mental well-being.</li>
+            <li style="margin-top: 0.8rem;">Healthy digital habits and real-life engagement promote confidence and clarity.</li>
+            <li style="margin-top: 0.8rem;"><strong>Be mindful of what you consume online—your self-esteem depends on it.</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 5: Final Message -->
+  <section class="slide">
+    <div class="split-screen">
+      <div class="split-left">
+        <div class="content-left">
+          <div class="emoji-section" style="font-size: 3rem;">🎭</div>
+          <h2 style="color: #ffffff; font-size: 2.5rem;">REMEMBER</h2>
+          <p style="color: #ffffff; font-size: 1.1rem; margin-top: 1.5rem;">Not everything posted<br/>is a true reflection</p>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="content-right">
+          <div class="emoji-section" style="font-size: 3rem;">💎</div>
+          <h2 style="color: #333333; font-size: 2.5rem;">CELEBRATE</h2>
+          <p style="color: #333333; font-size: 1.1rem; margin-top: 1.5rem;">Your authentic self<br/>and unique journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
